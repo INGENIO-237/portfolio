@@ -3,8 +3,20 @@
 @tailwind utilities;
 
 
-@layer base{
-  body{
+@layer base {
+  body {
     @apply font-primary bg-primary text-white leading-loose;
+  }
+
+  .h1 {
+    @apply text-[45px] lg:text-[60px] leading-[1.2] font-semibold;
+  }
+
+  .h2 {
+    @apply text-[33px] lg:text-[45px] leading-[1.2] font-semibold;
+  }
+
+  .h3 {
+    @apply text-[20px] lg:text-[25px] leading-[1.2] font-semibold;
   }
 }
