@@ -1,5 +1,6 @@
 import Photo from "@/components/home/Photo";
 import Socials from "@/components/home/Socials";
+import Stats from "@/components/home/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
@@ -10,17 +11,18 @@ export default function Home() {
         <div className="text-center lg:text-left order-2 lg:order-none">
           <span className="text-xl">Software Engineer</span>
           <h1 className="h1 my-6">
-            Hello I'm <br />{" "}
+            Hello I'm
+            <br />
             <span className="text-accent">BEN HAMADOU A.</span> (aka{" "}
             <span className="text-accent">INGENIO</span>)
           </h1>
           <p className="max-w-[500px] mb-9">
             Backend Engineer with some descent knowledge(kinda) in frontend.😅{" "}
             <br />
-            Passion for the art of crafting digital solutions to address
+            {/* Passion for the art of crafting digital solutions to address
             real-world problems.🦾
-            <br />
-            Driven by stimulating, challenging and rewarding projects.🧭
+            <br /> */}
+            {/* Driven by stimulating, challenging and rewarding projects.🧭 */}
           </p>
 
           <div className="flex flex-col lg:flex-row lg:justify-start items-center gap-5">
@@ -37,6 +39,7 @@ export default function Home() {
           <Photo />
         </div>
       </div>
+      <Stats />
     </main>
   );
 }
